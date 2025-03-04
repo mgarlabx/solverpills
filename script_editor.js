@@ -40,7 +40,13 @@ const Editor = {
     },
 
     async run() {
-        const code = Editor.obj.getValue();
+        let code = Editor.obj.getValue();
+
+        // Gambware to add pyodide-http when using pd.read_*
+        if (code.indexOf('pd.read_') > -1) {
+            code = 'import pyodide_http\npyodide_http.patch_all()\n' + code;
+        }
+        
         Z.html('#editor-console', '');
         Z.html('#editor-help', '');
         Z.processing.show();
