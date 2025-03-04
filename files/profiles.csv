@@ -1,3 +1,2 @@
-﻿name,sex,age,height,weight
-Amanda,F,28,1.65,54
-Marcelo,M,45,1.80,115
+﻿status_id,status_type,num_reactions,num_comments,num_shares,num_likes,num_loves,num_wows,num_hahas,num_sads,num_angrys
+246675545449582_1649696485147474,video,529,512,262,432,92,3,1,1,0
