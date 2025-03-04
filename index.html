@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/cube.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- https://github.com/lipis/flag-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+
+    <!-- Marked -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Codemirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/python/python.min.js"></script>
+
+    <!-- Pyodide -->
+    <!-- https://pyodide.org/ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+
+    <!-- SolverJS -->
+    <link rel="stylesheet" href="https://solvertank.tech/solverjs/solverjs.css">
+    <script src="https://solvertank.tech/solverjs/solverjs.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div id="header">
+        <div id="header-left">
+            <img width="30" src="images/cube.png">&nbsp;&nbsp;&nbsp;
+            <div id="header-title">Solverpills</div>
+        </div>
+        <div id="header-right">
+            <div id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div id="menu-dropdown">
+                <div class="menu-item" id="menu-en">
+                    <div class="fi fi-us" id="flag-0"></div>&nbsp;&nbsp;English
+                </div>
+                <div class="menu-item" id="menu-pt">
+                    <div class="fi fi-br" id="flag-1"></div>&nbsp;&nbsp;Português
+                </div>
+                <div class="menu-item" id="menu-es">
+                    <div class="fi fi-es" id="flag-2"></div>&nbsp;&nbsp;Castellano
+                </div>
+                <div class="menu-separator"></div>
+                <div class="menu-item" id="menu-terms"><i class="fa-solid fa-file-contract"></i>
+                    <div class="menu-caption" id="menu-caption-terms"></div>
+                </div>
+                <div class="menu-item" id="menu-info"><i class="fa-solid fa-circle-info"></i>
+                    <div class="menu-caption" id="menu-caption-about"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="editor-lessons-container">
+        <select id="editor-lessons" onchange="editorSelect(this.value)"></select>
+    </div>
+    <div id="editor-code-container">
+        <textarea id="editor-code">print("Hello from Python!")</textarea>
+    </div>
+    <div id="editor-console-container">
+        <div id="editor-buttons">
+            <button class="editor-button" onclick="editorRun()" id="editor-button-run"></button>
+            <button class="editor-button" onclick="editorNew()" id="editor-button-new"></button>
+            <button class="editor-button" onclick="editorHelp()" id="editor-button-help"></button>
+        </div>
+        <div id="editor-console"></div>
+        <div id="editor-help"></div>
+    </div>
+</body>
+
+</html>

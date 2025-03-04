@@ -1,0 +1,63 @@
+[
+    {
+        "key": "Sim",
+        "pt": "Sim",
+        "en": "Yes",
+        "es": "Sí"
+    },
+    {
+        "key": "Não",
+        "pt": "Não",
+        "en": "No",
+        "es": "No"
+    },
+    {
+        "key": "menu-caption-about",
+        "pt": "Sobre",
+        "en": "About",
+        "es": "Sobre"
+    },
+    {
+        "key": "menu-caption-terms",
+        "pt": "Termos",
+        "en": "Terms",
+        "es": "Términos"
+    },
+    {
+        "key": "Idealizado e desenvolvido por Maurício Garcia",
+        "pt": "Idealizado e desenvolvido por Maurício Garcia",
+        "en": "Idealized and developed by Maurício Garcia",
+        "es": "Idealizado y desarrollado por Maurício Garcia"
+    },
+
+    {
+        "key": "menu-about",
+        "pt": "Solverpills é uma ferramenta simples e eficiente para aprender Python. Não é necessário instalar nada – basta abrir no navegador e começar a codificar instantaneamente. A plataforma oferece um conjunto de lições interativas projetadas para ajudar os usuários a compreender os conceitos de Python de forma prática. Além disso, um assistente de IA está disponível para responder perguntas e fornecer orientação sempre que necessário. Se você é um iniciante procurando aprender Python, o Solverpills oferece uma experiência de aprendizado perfeita, acessível de qualquer lugar. Comece a codificar agora mesmo!",
+        "en": "Solverpills is a simple and efficient tool for learning Python. No installation is required – just open it in your browser and start coding instantly. The platform provides a set of interactive lessons designed to help users grasp Python concepts in a practical way. Additionally, an AI assistant is available to answer questions and provide guidance whenever needed. If you are a beginner looking to learn Python, Solverpills offers a seamless learning experience, accessible from anywhere. Start coding right now!",
+        "es": "Solverpills es una herramienta simple y eficiente para aprender Python. No es necesario instalar nada: simplemente ábralo en su navegador y comience a codificar al instante. La plataforma proporciona un conjunto de lecciones interactivas diseñadas para ayudar a los usuarios a comprender los conceptos de Python de manera práctica. Además, un asistente de IA está disponible para responder preguntas y brindar orientación siempre que sea necesario. Si eres un principiante que busca aprender Python, Solverpills ofrece una experiencia de aprendizaje perfecta, accesible desde cualquier lugar. ¡Comienza a codificar ahora mismo!"
+    },
+    {
+        "key": "Run",
+        "pt": "Executar",
+        "en": "Run",
+        "es": "Ejecutar"
+    },
+    {
+        "key": "New",
+        "pt": "Novo",
+        "en": "New",
+        "es": "Nuevo"
+    },
+    {
+        "key": "Help",
+        "pt": "Ajuda",
+        "en": "Help",
+        "es": "Ayuda"
+    },
+    {
+        "key": ""
+    },
+    {
+        "key": ""
+    }
+]
