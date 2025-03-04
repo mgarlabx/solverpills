@@ -16,10 +16,19 @@ const Editor = {
             mode: "python"
         });
         fetch('https://solvertank.tech/solverpills/lessons/').then(response => response.json()).then(data => {
+            let lastChapter = '';
             data.forEach((lesson, index) => {
+                if (lesson.chapter !== lastChapter) {
+                    lastChapter = lesson.chapter;
+                    const option = document.createElement('option');
+                    option.value = -1;
+                    option.text = lesson.chapter.toUpperCase().replace('_', ' ').replace('0', '');
+                    option.disabled = true;
+                    Z.get('#editor-lessons').appendChild(option);
+                }
                 const option = document.createElement('option');
                 option.value = index;
-                option.text = `${lesson.chapter} - ${lesson.lesson}`;
+                option.text = `...${lesson.lesson.replace('.py', '').replace('_', ' ').replace('0', '')}`;
                 Z.get('#editor-lessons').appendChild(option);
             });
             Editor.lessons = data;
@@ -37,6 +46,8 @@ const Editor = {
     select(index) {
         const lesson = Editor.lessons[index];
         Editor.obj.setValue(lesson.content);
+        Z.html('#editor-console', '');
+        Z.html('#editor-help', '');
     },
 
     async run() {
@@ -88,7 +99,6 @@ const Editor = {
             let comment = data.comment;
             comment = marked.parse(comment); // https://github.com/markedjs/marked
             comment = comment.replace(/<a /g, '<a target="_blank" ');
-            //comment = comment.replace(/\n/g, '<br>');
             Z.html('#editor-help', comment);
         });
 
