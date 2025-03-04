@@ -27,6 +27,8 @@ const Editor = {
 
         Editor.pyodide = await loadPyodide(); 
         await Editor.pyodide.loadPackage(['pandas', 'pyodide-http']);
+        // const micropip = Editor.pyodide.pyimport('micropip');
+        // await micropip.install('openpyxl');
         console.log = message => Z.get('#editor-console').innerHTML += message + '<br>'; // run first time
         Z.show('#editor-console-container');
 
