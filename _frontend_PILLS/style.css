@@ -1,0 +1,161 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding: 1rem;
+    background-color: lightgray;
+    height: 100%;
+}
+
+
+
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: cyan;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 1rem);
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    cursor: pointer;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+#header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header-button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+}
+
+.header-button:hover {
+    background-color: #0056b3;
+}
+
+.header-button-json {
+    display: none;
+}
+
+
+/* MENU */
+
+#menu-toggle {
+    cursor: pointer;
+    padding: 10px;
+}
+
+#menu-toggle:hover {
+    background-color: lightgray;
+}
+
+#menu-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 5px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu-item {
+    cursor: pointer;
+    margin: 0.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+}
+
+.menu-item:hover {
+    background-color: lightgray;
+}
+
+.menu-caption {
+    margin-left: 0.5rem;
+}
+
+.menu-separator {
+    border-top: 1px solid lightgray;
+    margin: 0.25rem;
+}
+
+
+
+
+#editor-lessons-container {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#editor-code-container {
+	border: 1px solid #ccc;	
+}
+
+#editor-console {
+	overflow-y: scroll;
+	height: 300px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: #222;
+	color: #00FF00;
+	font-family: 'Lucida Console', 'Courier New', monospace;
+}
+
+.editor-button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.editor-button:hover {
+	background-color: #45a049;
+}
+
+#editor-help {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
